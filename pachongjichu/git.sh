@@ -1,5 +1,6 @@
 #!/bin/bash
 if [ $# -eq  1 ];then
+    git remote rm origin
     git remote add origin git@github.com:helloxizhao/$1.git
     git add ./*
     git commit -m  "commit $1"
